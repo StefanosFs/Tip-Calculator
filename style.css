@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.6;
+  padding: 15px;
+}
+
+.container {
+  background-color: white;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  border-radius: 10px;
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  border: 5px solid gray; */
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px 0 15px;
+  width: 100%;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  margin: 15px 0;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#total {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  color: #4caf50;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  #total {
+    font-size: 1.25rem;
+  }
+}
+
+/* For very small devices */
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 12px;
+  }
+
+  input, button {
+    padding: 8px;
+  }
+}
+
+/* For larger screens */
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 40px auto;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  input {
+    padding: 15px;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 18px;
+  }
+}
